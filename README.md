@@ -14,12 +14,11 @@ _NOTE_: run 'npm install' to set up the dependencies
 
 Do as much as you have time of the following tasks. Don't get stuck at any details. If you don't get some detail right, just move on.
 
-You can rewrite or style the compoments as you wish. Some things may be hard to get to work.
+You can rewrite or style the compoments as you wish. Some things may be hard to get to work. There might be errors in the code - feel free to correct them.
 
 1. style the component "ProteinList" as close as possible to the supplied design
-2. modify the React app to show the component
-3. add some user interface to simulate
-4. make any comments on the code you started with, what is good, bad or hard to use
+2. add some user interface to test hoe the main page handles an error (using 'fetchError')
+3. take notes on the code: what is good, bad or hard to use
 
 # Design
 
