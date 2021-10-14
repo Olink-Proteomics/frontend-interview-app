@@ -7,6 +7,7 @@ import { ArrowIcon } from "./Icons/ArrowIcon";
 import { Table } from "./Table";
 
 import "../styles/protein-list.css";
+import "../styles/table.css";
 
 export const ProteinList = ({ proteins }) => {
   const [expandedUniProtId, setExpandedUniProtId] = useState();
@@ -15,18 +16,12 @@ export const ProteinList = ({ proteins }) => {
     {
       key: "identifier",
       label: "UniProt ID",
-      className: "width: 20%",
+      className: "protein-list-column-identifier",
       formatter: (protein) => (
         <div className="relative">
           <ArrowIcon
             direction="down"
-            className={classNames(
-              "protein-list-arrow",
-              protein.identifier === expandedUniProtId &&
-                "protein_list_expanded_uniprot_id",
-              protein.identifier !== expandedUniProtId &&
-                "protein_list_deflated_uniprot_id"
-            )}
+            className={classNames("protein-list-arrow")}
           />
           {protein.identifier}
         </div>
@@ -35,12 +30,12 @@ export const ProteinList = ({ proteins }) => {
     {
       key: "gene",
       label: "Gene",
-      className: "w-3/5",
+      className: "protein-list-column-gene",
     },
     {
       key: "panels",
       label: "Panels",
-      className: "is-aligned-middle hover:z-10 w-1/5",
+      className: "protein-list-column-panels",
       formatter: (protein) => {
         return protein && protein.panels && protein.panels.length > 0 ? (
           <PanelDotList panels={protein.panels} />

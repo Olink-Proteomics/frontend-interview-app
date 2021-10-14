@@ -2,14 +2,14 @@
   float: left;
 }
 
-.panel-dot-list-wrapper {
-  position: relative;
-  flex-shrink: 1;
-}
-
 .panel-dot-list-panel {
   display: flex;
   align-items: center;
   margin-right: 0.125rem;
   margin-left: 0.125rem;
+}
+
+.panel-dot-list-wrapper {
+  position: relative;
+  flex-shrink: 1;
 }
