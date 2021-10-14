@@ -8,11 +8,7 @@ import "../styles/protein-details.css";
 
 export const ProteinDetails = ({ protein, onCloseClick }) => {
   return (
-    <div
-      className={classNames(
-        "relative min-h-100 border-t border-one-offs-table-head-bottom-border-gray"
-      )}
-    >
+    <div className="protein-details-main">
       {onCloseClick && (
         <Button size="round" onClick={() => onCloseClick()}>
           <CrossIcon />
@@ -20,13 +16,9 @@ export const ProteinDetails = ({ protein, onCloseClick }) => {
       )}
 
       <div>
-        <ul className={classNames("flex flex-wrap max-w-content pt-5")}>
+        <ul className="protein-details-list">
           <li className="mt-2">
-            <div
-              className={classNames("typography-descriptions text-gray mb-1.5")}
-            >
-              Protein name
-            </div>
+            <div className="protein-details-head">Protein name</div>
 
             <a
               href={`https://www.uniprot.org/uniprot/${protein.identifier}`}
@@ -35,10 +27,7 @@ export const ProteinDetails = ({ protein, onCloseClick }) => {
               rel="noopener noreferrer"
             >
               {protein.name}{" "}
-              <ExternalLinkIcon
-                width={18}
-                className="relative flex-shrink-0 inline-block bottom-0.75 -ml-0.5"
-              />
+              <ExternalLinkIcon width={18} className="protein-details-link" />
             </a>
           </li>
         </ul>
