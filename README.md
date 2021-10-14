@@ -16,7 +16,7 @@ Do as much as you have time of the following tasks. Don't get stuck at any detai
 
 You can rewrite or style the compoments as you wish.
 
-1. implement a component "ProteinList" as close as possible to the supplied design
+1. style the component "ProteinList" as close as possible to the supplied design
 2. modify the React app to show the component
 3. add some user interface to simulate
 4. make any comments on the code you started with, what is good, bad or hard to use
