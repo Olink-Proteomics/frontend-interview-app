@@ -13,10 +13,14 @@
   background-color: rgba(0, 14, 25, 1);
 }
 
-.table-separator {
-  border-top-width: 0px;
-  border-bottom-width: 0px;
-  border-color: rgba(245, 245, 245, 1);
+.table-head {
+  font-size: 12px;
+  font-weight: 500;
+  text-align: left;
+  color: rgba(114, 124, 136, 1);
+  padding-bottom: 0.25rem;
+  border-bottom-width: 1px;
+  border-color: rgba(57, 69, 80, 1);
 }
 
 .table-row-is-highlighted {

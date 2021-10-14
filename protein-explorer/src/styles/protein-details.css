@@ -36,3 +36,10 @@
   bottom: 0.1875rem;
   margin-left: -0.125rem;
 }
+
+.protein-details-function {
+  font-size: 14px;
+  line-height: 1.35;
+  font-weight: 400;
+  max-width: 30rem;
+}

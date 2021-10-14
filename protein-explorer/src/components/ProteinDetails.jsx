@@ -1,5 +1,3 @@
-import classNames from "classnames";
-
 import { CrossIcon, ExternalLinkIcon } from "./Icons";
 import { ProteinFunctionDescription } from "./ProteinFunctionDescription";
 import { Button } from "./Button";
@@ -17,7 +15,7 @@ export const ProteinDetails = ({ protein, onCloseClick }) => {
 
       <div>
         <ul className="protein-details-list">
-          <li className="mt-2">
+          <li>
             <div className="protein-details-head">Protein name</div>
 
             <a
@@ -34,10 +32,8 @@ export const ProteinDetails = ({ protein, onCloseClick }) => {
 
         <ProteinFunctionDescription
           protein={protein}
-          className="typography-body-regular"
+          className="protein-details-function"
         />
-
-        <div className={classNames("mb-4")}></div>
       </div>
     </div>
   );
