@@ -24,8 +24,9 @@
 
 .protein-details-title {
   font-size: 24px;
-  line-height: 1.167rem;
-  font-weight: 500;
+  line-height: 1.16666667;
+  font-weight: 400;
+  color: rgba(245, 245, 245, 1);
 }
 
 .protein-details-link {
