@@ -1,0 +1,17 @@
+.protein-list-arrow {
+  position: absolute;
+  left: -1.75rem;
+  top: -0.1875rem;
+  opacity: 0;
+  transition-property: opacity;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: 200ms;
+}
+
+.protein-list-expanded-uniprot-id:hover {
+  opacity: 0;
+}
+
+.protein-list-deflated-uniprot-id:hover {
+  opacity: 0.6;
+}

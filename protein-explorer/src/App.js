@@ -1,23 +1,21 @@
-import logo from './logo.svg';
-import './App.css';
+import "./App.css";
+
+import { ProteinList } from "./components/ProteinList";
+// eslint-disable-next-line
+import { fetchProteins, fetchError } from "./lib/api";
+import { useFetchData } from "./hooks/fetch-data";
 
 function App() {
+  // Simulate requests to external API
+  const { loading, data, error } = useFetchData(fetchProteins());
+  //const { loading, data, error } = useFetchData(fetchError());
+
   return (
+    // Here we want to see the protein list
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      {loading && <p>Loading...</p>}
+      {error && <p>Error: {error}</p>}
+      {data && <ProteinList proteins={data} />}
     </div>
   );
 }

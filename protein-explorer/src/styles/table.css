@@ -1,0 +1,29 @@
+.table tr td {
+  padding-bottom: 0.1875rem;
+  padding-top: 0.75rem;
+  transition: padding 0.3s ease;
+}
+
+.table {
+  width: 100%;
+  font-size: 14px;
+  font-weight: 500;
+  table-layout: auto;
+  color: rgba(255, 255, 255, 1);
+  background-color: rgba(0, 14, 25, 1);
+}
+
+.table-separator {
+  border-top-width: 0px;
+  border-bottom-width: 0px;
+  border-color: rgba(245, 245, 245, 1);
+}
+
+.table-row-is-highlighted {
+  background-color: rgba(28, 44, 55, 1);
+}
+
+.table-row-has-expanded-protein-details {
+  padding-top: 1rem;
+  padding-bottom: 0px;
+}

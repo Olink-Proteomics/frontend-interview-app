@@ -1,0 +1,31 @@
+.button {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding-right: 1.25rem;
+  padding-left: 1.25rem;
+  font-weight: 500;
+  vertical-align: baseline;
+  transition-property: background-color, border-color, color, fill, stroke;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: 150ms;
+  background-color: rgba(33, 51, 64, 1);
+  color: rgba(245, 245, 245, 1);
+  white-space: nowrap;
+  min-width: 6.875rem;
+}
+
+.button-round {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 2rem;
+  height: 2rem;
+  min-width: 0px;
+  padding: 0px;
+  border-radius: 9999px;
+}
+
+.button-has-icon {
+  justify-content: center;
+}

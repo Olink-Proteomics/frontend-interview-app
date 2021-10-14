@@ -1,0 +1,23 @@
+.panel-dot {
+  width: 0.5rem;
+  height: 0.5rem;
+  border-width: 1px;
+  border-radius: 9999px;
+  border-color: currentColor;
+}
+
+.panel-dot-color-brand-green {
+  color: #00c7e1;
+}
+
+.panel-dot-color-blue {
+  color: #39a3ff;
+}
+
+.panel-dot-color-pink {
+  color: #ff51b8;
+}
+
+.panel-dot-color-yellow {
+  color: #ffc700;
+}
