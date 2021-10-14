@@ -8,6 +8,8 @@ Make use as much of the code in the 'components' directory and 'App.js' as possi
 
 There is an additional readme file in 'protein-explorer' from the creation of the React application that has some useful information.
 
+_NOTE_: run 'npm install' to set up the dependencies
+
 # Tasks
 
 Do as much as you have time of the following tasks. Don't get stuck at any details. If you don't get some detail right, just move on.
