@@ -1,18 +1,18 @@
-import { useState, useEffect } from 'react'
-import { fetchData } from '../lib/api'
+import { useState, useEffect } from "react";
 
 export const useFetchData = (promise) => {
-    const [data, setData] = useState()
-    const [error, setError] = useState()
-    const [loading, setLoading] = useState(true)
+  const [data, setData] = useState();
+  const [error, setError] = useState();
+  const [loading, setLoading] = useState(true);
 
-    useEffect(() => {
-        if (!promise) return
+  useEffect(() => {
+    if (!promise) return;
 
-        promise.then(setData)
-            .catch(setError)
-            .finally(() => setLoading(false))
-    }, [promise])
+    promise
+      .then(setData)
+      .catch(setError)
+      .finally(() => setLoading(false));
+  }, [promise]);
 
-    return { loading, data, error }
-}
+  return { loading, data, error };
+};
