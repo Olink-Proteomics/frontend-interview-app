@@ -30,3 +30,5 @@ When you click a row expands some detail about the protein:
 ![img](design/mock2.png)
 
 Expanding another row should close the previously expanded details (max one open at a time) and the button marked with a cross should close the open detail.
+
+_NOTE_: The font shown in the images is not publicly available. Do not make too much effort to find a replacement.
