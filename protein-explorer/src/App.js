@@ -11,7 +11,6 @@ function App() {
   //const { loading, data, error } = useFetchData(fetchError());
 
   return (
-    // Here we want to see the protein list
     <div className="App">
       {loading && <p>Loading...</p>}
       {error && <p>Error: {error}</p>}
