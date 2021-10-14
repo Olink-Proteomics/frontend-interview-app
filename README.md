@@ -14,7 +14,7 @@ _NOTE_: run 'npm install' to set up the dependencies
 
 Do as much as you have time of the following tasks. Don't get stuck at any details. If you don't get some detail right, just move on.
 
-You can rewrite or style the compoments as you wish.
+You can rewrite or style the compoments as you wish. Some things may be hard to get to work.
 
 1. style the component "ProteinList" as close as possible to the supplied design
 2. modify the React app to show the component
